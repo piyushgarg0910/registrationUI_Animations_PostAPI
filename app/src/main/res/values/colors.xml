@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="regActivityColorPrimary">#000000</color>
+    <color name="regActivityColorAccentPrimary">#FFFFFF</color>
+    <color name="regActivityColorAccentSecondary">#D4AF37</color>
+    <color name="regActivityColorPrimaryTransparent">#55000000</color>
+    <color name="regActivityTransparent">#00000000</color>
+    <color name="regActivityTextColorHint">#55D4AF37</color>
+    <color name="regActivityNegativeColor">#C62828</color>
+    <color name="regActivityPositiveColor">#2E7D32</color>
+
+    <color name="profileActivityAccentPrimary">#FFFFFF</color>
+    <color name="profileActivityAccentSecondary">#000000</color>
+    <color name="profileActivityAccentSecondaryLight">#EEEEEE</color>
+    <color name="profileActivityPrimary">#E50057</color>
+    <color name="profileActivityPrimaryDark">#E50057</color>
+    <color name="profileActivityPrimaryTransparent">#EE4081</color>
+
+    <color name="regActivityDialog">#505050</color>
+</resources>

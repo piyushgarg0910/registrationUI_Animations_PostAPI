@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/EmailContainer"
+    android:background="@color/regActivityColorPrimaryTransparent">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:id="@+id/emailFragmentToolbar"
+        android:background="#00FFFFFF"
+        android:elevation="0dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EmailFragmentLayout"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_marginBottom="32dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/fragment_background">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="8dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/TextViewEmail"
+            android:textColor="@color/regActivityColorAccentSecondary"
+            android:textSize="16sp"
+            android:text="@string/EmailText"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:inputType="textEmailAddress|textEmailSubject|textWebEmailAddress"
+            android:hint="@string/EmailEditText"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:textCursorDrawable="@null"
+            android:layout_below="@id/TextViewEmail"
+            android:id="@+id/EditTextEmail"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:background="@drawable/edit_text_background"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_below="@id/EditTextEmail"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/TextViewEmailIncorrect"
+            android:textColor="@color/regActivityNegativeColor"
+            android:textSize="12sp"
+            android:text="@string/WrongEmailText"
+            android:visibility="invisible"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:text="@string/NextPageButton"
+            android:textColor="@color/regActivityColorAccentPrimary"
+            android:textSize="24sp"
+            android:id="@+id/EmailNextButton"
+            android:layout_marginTop="32dp"
+            android:layout_below="@id/TextViewEmailIncorrect"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="32dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

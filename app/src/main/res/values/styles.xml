@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="RegistrationActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/regActivityColorPrimary</item>
+        <item name="colorPrimaryDark">@color/regActivityColorPrimary</item>
+        <item name="colorAccent">@color/regActivityColorAccentPrimary</item>
+        <item name="android:navigationBarColor">@color/regActivityColorPrimary</item>
+        <item name="android:statusBarColor">@color/regActivityColorPrimary</item>
+        <item name="android:textColorHint">@color/regActivityTextColorHint</item>
+        <item name="android:datePickerDialogTheme">@style/DatePickerDialogTheme</item>
+    </style>
+
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/regActivityDialog</item>
+        <item name="android:textColor">@color/regActivityColorAccentPrimary</item>
+        <item name="android:textColorPrimary">@color/regActivityColorAccentPrimary</item>
+        <item name="colorAccent">@color/regActivityColorAccentPrimary</item>
+    </style>
+
+    <style name="DatePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="showTitle">false</item>
+        <item name="colorControlActivated">@color/regActivityNegativeColor</item>
+        <item name="android:selectableItemBackgroundBorderless">@drawable/edit_text_background</item>
+        <item name="colorControlHighlight">#c51162</item>
+        <item name="android:headerBackground">@color/regActivityDialog</item>
+    </style>
+
+    <style name="ProfileActivityTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/profileActivityPrimary</item>
+        <item name="colorPrimaryDark">@color/profileActivityPrimaryDark</item>
+        <item name="colorAccent">@color/profileActivityAccentPrimary</item>
+        <item name="android:navigationBarColor">@color/profileActivityPrimaryDark</item>
+        <item name="android:statusBarColor">@color/profileActivityPrimaryDark</item>
+        <item name="android:alertDialogTheme">@style/ProfileAlertDialogTheme</item>
+    </style>
+
+    <style name="ProfileAlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/profileActivityAccentSecondary</item>
+        <item name="android:textColor">@color/profileActivityAccentPrimary</item>
+        <item name="android:textColorPrimary">@color/profileActivityAccentPrimary</item>
+        <item name="colorAccent">@color/profileActivityAccentPrimary</item>
+    </style>
+
+</resources>

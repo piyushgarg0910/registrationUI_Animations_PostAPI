@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">Pheramor</string>
+    <string name="Positive">YES</string>
+    <string name="Negative">NO</string>
+    <string name="ExitDialogTitle">Close Application</string>
+    <string name="ExitDialogMessage">Do you wish to exit?</string>
+    <string name="EmailEditText">john/jane.doe@example.com</string>
+    <string name="EmailText">Enter your email address: </string>
+    <string name="PasswordText">New Password: </string>
+    <string name="ReenterPasswordText">Repeat Password: </string>
+    <string name="WrongEmailText">Please enter a correct email address to continue.</string>
+    <string name="UnmatchedPasswordText">Passwords do not match.</string>
+    <string name="NextPageButton">Next</string>
+    <string name="RegisterButton">Register</string>
+    <string name="FirstNameText">First Name:</string>
+    <string name="LastNameText">Last Name:</string>
+    <string name="FirstNameEditText">John/Jane</string>
+    <string name="LastNameEditText">Doe</string>
+    <string name="ProfilePicButton">Upload</string>
+    <string name="InterestText">Interests</string>
+    <string name="ProfilePic">Profile Picture</string>
+    <string name="ManText">Man</string>
+    <string name="MaleText">Male</string>
+    <string name="FemaleText">Female</string>
+    <string name="ZipPlaceHolder">00000</string>
+    <string name="SuccessfulRegistration">Registration Successful</string>
+    <string name="UnsuccessfulRegistration">Registration Unsuccessful</string>
+    <string name="ViewProfile">View Profile</string>
+    <string name="TryAgain">Try Again</string>
+    <string name="WomanText">Woman</string>
+    <string name="AgeRangeText">Age Range</string>
+    <string name="AgeMinText">18</string>
+    <string name="AgeMaxText">60+</string>
+    <string name="RequiredText">*Required</string>
+    <string name="HeightText">Height</string>
+    <string name="ZipCodeText">ZipCode:</string>
+    <string name="ZipCodeEditText">01234</string>
+    <string name="DateOfBirthText">Date of Birth: </string>
+    <string name="DateOfBirthEditText">MM/DD/YYYY</string>
+    <string name="DescriptionText">Describe yourself:</string>
+    <string name="ShortDescriptionText">Lorem ipsum dolor sit amet</string>
+    <string name="WrongPasswordText">Password must be 8-16 characters in length, and must
+        contain at least one lower case, one uppercase, one number, and one special character
+        among !@#$%^'*()_.</string>
+    <string-array name="Race">
+        <item>Race</item>
+        <item>Alpha</item>
+        <item>Bravo</item>
+        <item>Charlie</item>
+        <item>Delta</item>
+        <item>Echo</item>
+        <item>Foxtrot</item>
+        <item>Golf</item>
+        <item>Hotel</item>
+    </string-array>
+    <string-array name="Religion">
+        <item>Religion</item>
+        <item>Sierra</item>
+        <item>Tango</item>
+        <item>Uniform</item>
+        <item>Victor</item>
+        <item>Whiskey</item>
+        <item>X-ray</item>
+        <item>Yankee</item>
+        <item>Zulu</item>
+    </string-array>
+</resources>

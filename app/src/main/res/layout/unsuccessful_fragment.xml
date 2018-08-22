@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Unsuccessful_Container"
+    android:background="@color/regActivityColorAccentPrimary">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/regActivityColorAccentSecondary"
+        android:textSize="32sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/UnsuccessfulTextView"
+        android:text="@string/UnsuccessfulRegistration"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_centerInParent="true"
+        android:id="@+id/UnsuccessfulImageView"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="48dp"
+        android:id="@+id/UnsuccessfulButton"
+        android:layout_centerHorizontal="true"
+        android:text="@string/TryAgain"
+        android:textSize="24sp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="24dp"
+        android:textColor="@color/regActivityColorAccentPrimary"
+        android:background="@drawable/button_background"/>
+
+</RelativeLayout>

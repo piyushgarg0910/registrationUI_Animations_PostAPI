@@ -60,6 +60,7 @@ public class SuccessfulFragment extends Fragment {
                 Intent intent = new Intent(getActivity(),ProfileActivity.class);
                 intent.putExtra("RegObject",registrationDetails);
                 getActivity().startActivity(intent);
+                getActivity().finish();
             }
         });
     }

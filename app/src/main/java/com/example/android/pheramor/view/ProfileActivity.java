@@ -78,7 +78,7 @@ public class ProfileActivity extends AppCompatActivity{
         profileValue.add(registrationDetails.getEmail());
         if(registrationDetails.getZipCode() != 0){
             profileKey.add("Zip Code: ");
-            profileValue.add(registrationDetails.getZipCode().toString());
+            profileValue.add(String.format("%05d",registrationDetails.getZipCode().toString()));
         }
         if (!registrationDetails.getmRace().equals(getResources().getStringArray(R.array.Race)[0])){
             profileValue.add(registrationDetails.getmRace());

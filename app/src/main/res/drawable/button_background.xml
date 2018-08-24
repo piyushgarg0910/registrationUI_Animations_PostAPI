@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--
+- Created by Piyush Garg on 08/20/18.
+-->
+
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
     <solid android:color="@color/regActivityColorAccentSecondary"/>
     <corners android:radius="24dp"/>

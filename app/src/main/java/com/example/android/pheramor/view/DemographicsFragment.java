@@ -242,9 +242,13 @@ public class DemographicsFragment extends Fragment {
 
             @Override
             public void onClick(View v) {
-                new DatePickerDialog(getContext(), date, myCalendar
+                DatePickerDialog datePickerDialog = new DatePickerDialog(getContext(), date, myCalendar
                         .get(Calendar.YEAR), myCalendar.get(Calendar.MONTH),
-                        myCalendar.get(Calendar.DAY_OF_MONTH)).show();
+                        myCalendar.get(Calendar.DAY_OF_MONTH));
+                Calendar calendar = Calendar.getInstance();
+                calendar.add(Calendar.YEAR, -18);
+                datePickerDialog.getDatePicker().setMaxDate(calendar.getTimeInMillis());
+                datePickerDialog.show();
             }
         });
 

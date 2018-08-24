@@ -1,5 +1,9 @@
 package com.example.android.pheramor.view;
 
+/*
+ * Created by Piyush Garg on 08/20/18.
+ */
+
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -7,7 +11,6 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -48,7 +51,6 @@ public class ProfileActivity extends AppCompatActivity{
         setContentView(R.layout.activity_profile);
         Intent intent = getIntent();
         registrationDetails = intent.getParcelableExtra("RegObject");
-        Log.e("Registration Det: ", registrationDetails.toString());
         ButterKnife.bind(this);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
@@ -97,8 +99,8 @@ public class ProfileActivity extends AppCompatActivity{
         }
 
         profileAdapter.ProfileAdapterSetter(profileKey,profileValue);
-
-        textView.setText(registrationDetails.getFirstName() + " " + registrationDetails.getLastName());
+        String name = registrationDetails.getFirstName() + " " + registrationDetails.getLastName();
+        textView.setText(name);
         if(registrationDetails.getProfilePic() == null){
             Picasso.with(this).load(R.drawable.profile_placeholder).into(imageView);
         }
@@ -109,7 +111,8 @@ public class ProfileActivity extends AppCompatActivity{
             textViewAge.setText(String.valueOf(new AgeCalculator().getAge(registrationDetails.getDob())));
         }
         else{
-            textViewAge.setText("00");
+            String age = "00";
+            textViewAge.setText(age);
         }
         if (registrationDetails.getGender() == null){
             Picasso.with(this).load(R.drawable.male_female).into(imageViewGender);

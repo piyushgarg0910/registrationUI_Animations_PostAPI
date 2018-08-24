@@ -1,7 +1,10 @@
 package com.example.android.pheramor.view;
 
+/*
+ * Created by Piyush Garg on 08/20/18.
+ */
+
 import android.Manifest;
-import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.support.annotation.NonNull;
@@ -47,8 +50,6 @@ public class RegistrationActivity extends AppCompatActivity {
                 .diskCacheStrategy(DiskCacheStrategy.SOURCE)
                 .into(gifImageView);
         gifImageView.startAnimation();
-
-       // Intent intent = getIntent();
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -97,7 +98,8 @@ public class RegistrationActivity extends AppCompatActivity {
                 else if (grantResults.length != 0 &&
                         grantResults[0] == PackageManager.PERMISSION_DENIED
                     && grantResults[1] == PackageManager.PERMISSION_DENIED) {
-                    Toast.makeText(this, "Registration Unsuccessful", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Registration Unsuccessful",
+                            Toast.LENGTH_SHORT).show();
                 }
         }
     }

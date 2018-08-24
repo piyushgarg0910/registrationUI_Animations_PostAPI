@@ -1,5 +1,9 @@
 package com.example.android.pheramor.network;
 
+/*
+ * Created by Piyush Garg on 08/20/18.
+ */
+
 import android.arch.lifecycle.LiveData;
 import android.arch.lifecycle.MutableLiveData;
 import android.util.Log;
@@ -49,7 +53,6 @@ public class UpdateAPI {
 
                 @Override
                 public void onResponse(Call call, Response response) throws IOException {
-                    Log.e("Response", response.body().string());
                     result.postValue(true);
                 }
             });

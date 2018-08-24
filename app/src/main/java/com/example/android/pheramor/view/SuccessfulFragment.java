@@ -1,5 +1,9 @@
 package com.example.android.pheramor.view;
 
+/*
+ * Created by Piyush Garg on 08/20/18.
+ */
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -34,7 +38,8 @@ public class SuccessfulFragment extends Fragment {
 
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
+                             @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.successful_fragment,container,false);
         ButterKnife.bind(this,view);
         Bundle bundle = this.getArguments();
@@ -45,9 +50,12 @@ public class SuccessfulFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        Animation animationEnterLeft = new AnimationUtils().loadAnimation(getContext(),R.anim.enter_left_slow);
-        Animation animationEnterRight = new AnimationUtils().loadAnimation(getContext(),R.anim.enter_right_slow);
-        Animation animationAppear = new AnimationUtils().loadAnimation(getContext(),R.anim.appear);
+        Animation animationEnterLeft = new AnimationUtils()
+                .loadAnimation(getContext(),R.anim.enter_left_slow);
+        Animation animationEnterRight = new AnimationUtils()
+                .loadAnimation(getContext(),R.anim.enter_right_slow);
+        Animation animationAppear = new AnimationUtils()
+                .loadAnimation(getContext(),R.anim.appear);
 
         textView.startAnimation(animationEnterLeft);
         Picasso.with(getContext()).load(R.drawable.greentickmark).into(imageView);

@@ -1,5 +1,9 @@
 package com.example.android.pheramor.view;
 
+/*
+ * Created by Piyush Garg on 08/20/18.
+ */
+
 import android.content.Intent;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
@@ -20,7 +24,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.android.pheramor.R;
 import com.example.android.pheramor.model.RegistrationDetails;

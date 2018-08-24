@@ -1,5 +1,9 @@
 package com.example.android.pheramor.view;
 
+/*
+ * Created by Piyush Garg on 08/20/18.
+ */
+
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -36,7 +40,8 @@ public class UnsuccessfulFragment extends Fragment {
 
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
+                             @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.unsuccessful_fragment,container,false);
         ButterKnife.bind(this,view);
         Bundle bundle = getArguments();

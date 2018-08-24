@@ -1,5 +1,9 @@
 package com.example.android.pheramor.view;
 
+/*
+ * Created by Piyush Garg on 08/20/18.
+ */
+
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.drawable.GradientDrawable;
@@ -25,14 +29,10 @@ import android.widget.ImageView;
 import android.widget.NumberPicker;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
 import com.example.android.pheramor.R;
 import com.example.android.pheramor.model.RegistrationDetails;
 import com.squareup.picasso.Picasso;
-
-import java.util.Locale;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -200,7 +200,8 @@ public class DetailsFragment extends Fragment {
                     break;
             }
         } catch (Exception e) {
-            Log.e("Profile Pic Exception", "Exception in onActivityResult : " + e.getMessage());
+            Log.e("Profile Pic Exception",
+                    "Exception in onActivityResult : " + e.getMessage());
         }
     }
 

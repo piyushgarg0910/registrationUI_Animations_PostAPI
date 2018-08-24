@@ -1,5 +1,9 @@
 package com.example.android.pheramor.view;
 
+/*
+ * Created by Piyush Garg on 08/20/18.
+ */
+
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -10,7 +14,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,7 +23,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.android.pheramor.R;
 import com.example.android.pheramor.model.RegistrationDetails;
@@ -100,7 +102,8 @@ public class PasswordFragment extends Fragment {
                     bundle.putParcelable("DetailsObject",registrationDetails);
                     Fragment fragment = new DetailsFragment();
                     fragment.setArguments(bundle);
-                    FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
+                    FragmentTransaction fragmentTransaction = getActivity()
+                            .getSupportFragmentManager().beginTransaction();
                     fragmentTransaction.setCustomAnimations(R.anim.enter_bottom,R.anim.exit_bottom);
                     fragmentTransaction.replace(R.id.PasswordContainer,fragment,"DetailsFragment");
                     fragmentTransaction.commit();
@@ -120,7 +123,8 @@ public class PasswordFragment extends Fragment {
                     boolean result = passwordValidation.isPasswordValid(charSequence);
                     if (result){
                         textView.setVisibility(View.INVISIBLE);
-                        GradientDrawable gradientDrawable = (GradientDrawable) editText.getBackground();
+                        GradientDrawable gradientDrawable
+                                = (GradientDrawable) editText.getBackground();
                         gradientDrawable.setStroke(3,getResources()
                                 .getColor(R.color.regActivityPositiveColor));
                     }
@@ -142,7 +146,8 @@ public class PasswordFragment extends Fragment {
                 if (textView1.getVisibility() == View.VISIBLE){
                     if (editText.getText().toString().equals(charSequence.toString())){
                         textView1.setVisibility(View.INVISIBLE);
-                        GradientDrawable gradientDrawable = (GradientDrawable) editText1.getBackground();
+                        GradientDrawable gradientDrawable
+                                = (GradientDrawable) editText1.getBackground();
                         gradientDrawable.setStroke(3,getResources()
                                 .getColor(R.color.regActivityPositiveColor));
                     }
@@ -169,7 +174,8 @@ public class PasswordFragment extends Fragment {
                 Fragment fragment = new EmailFragment();
                 fragment.setArguments(bundle);
                 layout.setVisibility(View.GONE);
-                FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
+                FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager()
+                        .beginTransaction();
                 fragmentTransaction.setCustomAnimations(R.anim.enter_bottom,R.anim.exit_bottom);
                 fragmentTransaction.replace(R.id.PasswordContainer,fragment);
                 fragmentTransaction.commit();
